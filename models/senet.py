@@ -1,5 +1,6 @@
 # from harmonic import Harm2d
-
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 """
 ResNet code gently borrowed from
 https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py

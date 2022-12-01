@@ -7,6 +7,8 @@ import pdb
 import copy
 from torchvision import utils
 import numpy as np
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 __all__ = ['DenseNet', 'densenet121',
            'densenet169', 'densenet201', 'densenet161']
